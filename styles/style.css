@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Utility Classes */
+.justify { text-align: justify; }
+.clear { clear: both; }
+
+
+/* Sidebar Start */
+.sidebar {
+    background-color: #FE6347;
+    position: fixed;
+    height: 100vh;
+    width: 20vw;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    color: #FEFEFE;
+    font-size: 1.25rem;
+    margin: 100px 30px 70px 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px 30px;
+}
+
+nav ul li a {
+    display: block;
+    color: #FEFEFE;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #FC7861;
+    transition: 0.3s;
+    cursor: pointer; 
+}
+
+nav ul li a:hover { color: #EDEDED; }
+/* Sidebar End */
+
+
+/* Main Content Start */
+.main-content {
+    background-color: #FEFEFE;
+    margin-left: 20vw;
+    width: 80vw;
+    padding: 0 50px;
+}
+
+/* Header */
+header h1 {
+    font-size: 3.5em;
+    margin-top: 85px;
+}
+
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+    padding-right: 15px;
+}
+
+.heading h2 {
+    color: #FE6347;
+    font-size: 2.5em;
+    padding: 15px 0;
+}
+
+.heading h2 + span {
+    display: block;
+    width: 50px;
+    border: #FE6347 4px solid;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+
+/* Showcase Section */
+.showcase div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.showcase img {
+    flex: 49%;
+    max-width: 49%;
+}
+
+
+/* Designers Section */
+.designers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Designers Card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); }
+  
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body { padding: 16px 20px; }
+
+.card .designation {
+    color: #969696;
+    padding: 10px 0;
+}
+
+
+/* Packages Section */
+.packages { margin-top: 25px; }
+
+.packages .box {
+    background-color: #F1F1F1;
+    width: 49%;
+}
+
+.packages .basic { float: left; }
+.packages .pro { float: right; }
+.packages span { width: 2%; }
+
+.box h4 {
+    background-color: #616161;
+    color: #FEFEFE;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 25px 0;
+}
+
+.box:hover h4 {
+    background-color: #FE6347;
+    transition: 0.3s;
+}
+
+.box-item li {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: #D1D1D1 1px solid;
+}
+
+.box-item li:nth-last-child(2) { border-bottom: none; }
+
+.box-item .price { margin-top: 15px; }
+
+.price button {
+    background-color: #F1F1F1;
+    font-size: 1.75rem;
+    padding: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.price button:hover { color: #FE6347; }
+
+.price span { font-size: 1.5rem; }
+
+.price p {
+    padding-top: 10px;
+    color: #808080;
+}
+
+.box-item .sign-up {
+    font-family: "Poppins", sans-serif;
+    background-color: #FEFEFE;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.box:hover .sign-up {
+    background-color: #FE6347;
+    transition: 0.3s;
+    color: #FEFEFE;
+}
+
+/* Thank You Message */
+.thank-you {
+    border-top: #D1D1D1 1px solid;
+    border-bottom: none!important;
+    color: #808080;
+}
+
+.box-item .hide { display: none; }
+.box-item .show { display: block; }
+
+
+/* Contact Section */
+#contact { margin-top: 50px; }
+
+/* Contact Form */
+.contact form { margin-top: 20px; }
+
+.form-group { margin-bottom: 15px; }
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+}
+
+.form-control:focus { 
+    outline: none;
+    border: 1px solid #979797;
+    
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    background-color: #FE6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FEFEFE;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #FD4A2B;
+    transition: 0.3s ease-in-out;
+    color: #FFF;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    margin-left: 20vw;
+    color: #808080;
+    padding: 25px;
+    width: 80vw;
+}

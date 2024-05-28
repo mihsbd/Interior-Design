@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>The Company</title>
+</head>
+<body>
+    <!-- Sidebar Start -->
+    <aside class="sidebar">
+        <h2>The <br>Company</h2>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#designers">Designers</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Sidebar End -->
+
+    <main class="main-content">
+        <header>
+            <h1>Interior Design</h1>
+        </header>
+
+        <!-- Showcase Section -->
+        <section id="showcase" class="heading">
+            <h2>Showcase.</h2>
+            <span></span>
+            <div class="showcase">
+                <div>
+                    <img src="images/showcase-01.jpg" alt="Showcase 01">
+                    <img src="images/showcase-02.jpg" alt="Showcase 02">
+                </div>
+                <div>
+                    <img src="images/showcase-03.jpg" alt="Showcase 03">
+                    <img src="images/showcase-04.jpg" alt="Showcase 04">
+                </div>
+                <div>
+                    <img src="images/showcase-05.jpg" alt="Showcase 05">
+                    <img src="images/showcase-06.jpg" alt="Showcase 06">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="heading">
+            <h2>Services.</h2>
+            <span></span>
+            <div class="services">
+                <p>The Company provides Interior Design Services that focus on - Transforming Spaces with Style and Elegance!</p>
+                <br>
+                <p class="justify">
+                    At <strong>The Company</strong>, we specialize in creating beautiful, functional, and personalized interiors for both residential and commercial spaces. Our services include custom home design, room makeovers, office and retail space design, and hospitality projects. We also offer expert furniture and decor selection, efficient space planning, and realistic 3D visualization and rendering. Our dedicated team manages every project from start to finish, ensuring it stays within budget and is completed on time. We prioritize sustainable design practices, using eco-friendly materials and energy-efficient solutions to create interiors that are as environmentally conscious as they are aesthetically pleasing. Choose us for a personalized approach, meticulous attention to detail, and a team of experienced designers passionate about bringing your vision to life.
+                </p>
+            </div>
+        </section>
+
+        <!-- Designers Section -->
+        <section id="designers" class="heading">
+            <h2>Designers.</h2>
+            <span></span>
+            <div>
+                <p>Meet the Designers at The Company - Bringing Your Vision to Life.</p>
+                <br>
+                <p class="justify">
+                    Our team of talented designers is dedicated to creating spaces that are both stylish and functional. Each designer brings a unique set of skills and a passion for creativity, ensuring that every project is tailored to your individual needs. With years of experience in residential and commercial design, they excel in custom home designs, room makeovers, and innovative office and retail spaces. Our designers are adept at selecting the perfect furniture and decor, optimizing space layouts, and providing realistic 3D visualizations. Committed to sustainability, they incorporate eco-friendly materials and energy-efficient solutions into their designs. Trust our designers to deliver meticulous attention to detail and a personalized approach, making your dream space a reality.
+                </p>
+                <br>
+                <p><b>Our designers are handpicked for their exceptional talent and vision:</b></p>
+                <!-- Designers Cards -->
+                <div class="designers">
+                    <div class="card">
+                        <img src="images/person-01.jpg" alt="John Doe">
+                        <div class="card-body">
+                            <h3><b>John Doe</b></h3> 
+                            <p class="designation">CEO & Founder</p>
+                            <p class="justify">
+                                Our CEO and Founder is a visionary leader with a passion for innovative design. With over 10 years of experience, he has transformed countless spaces into stunning environments.
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/person-02.jpg" alt="John Doe" style="width:100%">
+                        <div class="card-body">
+                            <h3><b>Jane Doe</b></h3> 
+                            <p class="designation">Designer</p>
+                            <p class="justify">
+                                Our lead designer excels in creating personalized and stylish interiors. With a keen eye for detail and a flair for creativity, she transforms client visions into beautiful realities.
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/person-03.jpg" alt="John Doe" style="width:100%">
+                        <div class="card-body">
+                            <h3><b>Mike Ross</b></h3> 
+                            <p class="designation">Architect</p>
+                            <p class="justify">
+                                Our architect specializes in designing structures that blend functionality with aesthetic appeal. With strong commitment to design, he brings every project to life with creativity.
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="heading">
+            <h2>Packages.</h2>
+            <span></span>
+            <p>
+                Opt for our "Basic" package for essential interior design services, while our "Pro" package offers comprehensive solutions with personalized concepts and dedicated project management, ensuring a seamless transformation of your space.
+            </p>
+            <div class="packages">
+                    <!-- Basic Package -->
+                    <div class="box basic">
+                    <h4>BASIC</h4>
+                    <ul class="box-item">
+                        <li>Floorplanning</li>
+                        <li>10 Hours Support</li>
+                        <li>Photography</li>
+                        <li>20% Furniture Discount</li>
+                        <li>Good Deals</li>
+
+                        <li class="price" data-base-price="199">
+                            <button id="decrease">-</button>
+                            <span id="amount">$ 199</span>
+                            <button id="increase">+</button>
+                            <p id="room">1 Room</p>                            
+                        </li>
+
+                        <li><button class="sign-up" id="sign-up">Sign Up</button></li>
+                        <li class="thank-you hide" id="thanks">Thank You for Choosing <span id="room-msg">1 Room</span></li>
+                    </ul>                    
+                </div>
+                <span></span>
+                <!-- Pro Package -->
+                <div class="box pro">
+                    <h4>PRO</h4>
+                    <ul class="box-item">
+                        <li>Floorplanning</li>
+                        <li>50 Hours Support</li>
+                        <li>Photography</li>
+                        <li>50% Furniture Discount</li>
+                        <li>Great Deals</li>
+                        
+                        <li class="price" data-base-price="249">
+                            <button id="decrease">-</button>
+                            <span id="amount">$ 249</span>
+                            <button id="increase">+</button>
+                            <p id="room">1 Room</p>
+                        </li>                        
+                        
+                        <li><button class="sign-up" id="sign-up">Sign Up</button></li>
+                        <li class="thank-you hide" id="thanks">Thank You for Choosing <span id="room-msg">1 Room</span></li>
+                    </ul>                    
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="heading">
+            <h2>Contact.</h2>
+            <span></span>
+            <div class="contact">
+                <p>Do you want us to style your space? Get in touch with us by filling out the contact form below:</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024. All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
